@@ -1,0 +1,23 @@
+Problem Domain Names:
+SecurePrinter
+ReleaseJob
+LegicCardPrime
+ProcessCardSwipe
+GetDiscoveryTree
+SecurePullPrintRequest
+BeaconConversionHelper
+SignInTelemetryHelper
+SNMPClientFactory
+ConvAuthClientFactory
+
+Solution Domain Name:
+StartPrintJob
+ScanDocument
+UploadDocument
+CheckPrinterStatus
+AuthenticateUser
+ConnectToPrinter
+GeneratePrintReport
+PrintMultipleCopies
+PreviewDocument
+DeleteDocument
