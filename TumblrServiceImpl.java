@@ -26,13 +26,13 @@ class TumblrServiceImpl implements TumblrService {
             String jsonResponse = response.toString().replace("var tumblr_api_read =", "").trim();
             jsonResponse = jsonResponse.substring(0, jsonResponse.length() - 1);
 
-            parseAndDisplayData(jsonResponse, start);
+            displayData(jsonResponse, start);
         } catch (Exception e) {
             System.out.println("Error fetching or parsing data: " + e.getMessage());
         }
     }
 
-    private void parseAndDisplayData(String jsonResponse, int start) {
+    private void displayData(String jsonResponse, int start) {
         JSONObject data = new JSONObject(jsonResponse);
 
         JSONObject tumblelog = data.getJSONObject("tumblelog");
